@@ -46,4 +46,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/bweb2552/leetcode_questions/tree/master/0234-palindrome-linked-list) |
+## Floyd's Cycle Finding Algorithm
+|  |
+| ------- |
+| [0141-linked-list-cycle](https://github.com/bweb2552/leetcode_questions/tree/master/0141-linked-list-cycle) |
 <!---LeetCode Topics End-->
