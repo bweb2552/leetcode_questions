@@ -6,7 +6,7 @@
  * };
  */
 struct ListNode* middleNode(struct ListNode* head) {
-    struct ListNode *temp=head;struct ListNode *kemp=head;
+    struct ListNode *temp=head;int count=1;struct ListNode *kemp=head;
     if(head==NULL){
         return NULL;
     }
@@ -14,11 +14,13 @@ struct ListNode* middleNode(struct ListNode* head) {
         return head;
     }
     else{
-        while(kemp!=NULL && kemp->next!=NULL){
-            temp=temp->next;
-            kemp=kemp->next->next;
+        while(temp->next!=NULL){
+            temp=temp->next;count++;
         }
-        return temp;
+        for(int i=2;i<=(count/2)+1;i++){
+                kemp=kemp->next;
+            }
+            return kemp;
 
     }
 }
